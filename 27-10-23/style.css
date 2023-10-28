@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(248, 244, 244);
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  background-color: rgb(241, 5, 5);
+  padding: 0 40px;
+  position: fixed;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+li a {
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: black;
+}
+
+/* end nav */
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* first section */
+
+section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.paragraphs {
+  margin-top: 10px;
+}
+
+.paragraphs.text-align {
+  text-align: center;
+}
+
+section button {
+  height: 40px;
+  width: 120px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(241, 5, 5);
+  border: 0;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(243, 67, 67);
+}
+
+/* end first section */
+
+/* second section */
+
+section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(196, 157, 157);
+}
+
+.box.image {
+  padding: 0;
+}
+
+.box.image img {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+}
+
+.box.white {
+  background-color: rgb(248, 244, 244);
+}
+
+/* end second section */
+
+/* third section */
+
+section:last-child {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 80px 0;
+}
+
+.card {
+  width: 300px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+/* end third section */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(241, 5, 5);
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box.white {
+    display: none;
+  }
+  .columns {
+    width: 100%;
+  }
+
+  .box.second {
+    background-color: rgb(248, 244, 244);
+  }
+}
