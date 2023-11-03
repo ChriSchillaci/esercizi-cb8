@@ -12,8 +12,7 @@ const animals = [
 console.log("CICLO FOR");
 
 for (let i = 0; i < animals.length; i++) {
-  console.log(i + 1
-     + ": " + animals[i]);
+  console.log(i + 1 + ": " + animals[i]);
 }
 console.log("");
 console.log("METODO ARRAY 'MAP'");
