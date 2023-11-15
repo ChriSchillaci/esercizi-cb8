@@ -1,0 +1,200 @@
+/* Use the mobile emulation mode to see the best results*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fefdf9;
+}
+
+/* Nav */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.top-nav h1 {
+  width: 140px;
+  font-size: 30px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 40px;
+}
+
+i {
+  font-size: 20px;
+}
+
+.nav-icons__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fefaef;
+}
+
+.transition-hover {
+  transition: all 0.3s ease;
+}
+
+.transition-hover:hover {
+  color: white;
+  background-color: black;
+}
+
+/* End nav */
+
+/* Category button */
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.category-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 90px;
+  gap: 12px;
+  background-color: #fefaef;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* End category buttons */
+
+/* Section card */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 50px;
+}
+
+.wrapper-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 300px;
+  width: 180px;
+  background-color: #fefaef;
+  border-radius: 30px;
+}
+
+.wrapper-top {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.heart-button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fddaaa;
+  cursor: pointer;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper-text p:first-child {
+  font-weight: bold;
+}
+
+.wrapper-text p:last-child::first-letter {
+  text-transform: capitalize;
+}
+
+.plus-button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fef1db;
+  cursor: pointer;
+}
+
+/* End section card */
+
+/* Bottom nav */
+
+.wrapper-bottom-nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 95%;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.bottom-nav button {
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/* End bottom nav */
+
+@media screen and (max-width: 480px) {
+  .nav-icons {
+    gap: 20px;
+  }
+}
