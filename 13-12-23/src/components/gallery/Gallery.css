@@ -1,0 +1,18 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 80px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        gap: 50px;
+        padding: 0 24px;
+    }
+}

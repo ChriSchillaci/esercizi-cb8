@@ -1,0 +1,17 @@
+.gallery__image {
+    width: 200px
+}
+
+img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 150px;
+    }
+
+    p {
+        display: none;
+    }
+}
