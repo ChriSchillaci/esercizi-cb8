@@ -1,0 +1,5 @@
+.gallery__image img {
+  object-fit: cover;
+  scroll-snap-align: center;
+  border-radius: 10px;
+}
