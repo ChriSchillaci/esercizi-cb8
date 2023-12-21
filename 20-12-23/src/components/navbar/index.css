@@ -1,0 +1,32 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: rgb(27, 25, 25);
+}
+
+.NavBar__logo {
+    font-size: 40px;
+}
+
+.NavBar__menu-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.NavBar__menu-burger {
+    display: none;
+    font-size: 30px;
+}
+
+@media  screen and (max-width: 768px) {
+    .NavBar__menu-list {
+        display: none;
+    }
+
+    .NavBar__menu-burger {
+        display: block;
+    }
+}

@@ -1,0 +1,47 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+}
+
+.Post__user-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Post__user-info img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(28, 122, 244);
+  border-radius: 50%;
+}
+
+.Post__title {
+  margin: 0;
+}
+
+.Post__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Post__info--icons {
+  display: flex;
+  gap: 2px;
+}
+
+.Post__info--categories {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.Post hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
