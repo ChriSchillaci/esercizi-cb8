@@ -1,0 +1,10 @@
+@import "../../assets/css/variables.scss";
+@import "../../assets/css/mixins.scss";
+
+.TodoList {
+  @include flex(column, center, center, 20px);
+  padding: 10px 5px;
+  border: 5px solid $border-color;
+  border-radius: 20px;
+  width: 50%;
+}

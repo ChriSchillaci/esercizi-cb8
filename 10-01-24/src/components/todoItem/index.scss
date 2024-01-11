@@ -1,0 +1,19 @@
+@import "../../assets/css/variables.scss";
+@import "../../assets/css/mixins.scss";
+
+.TodoItem {
+  @include flex(row, space-between, center);
+  width: 95%;
+  border-left: 3px solid $border-color;
+  padding-left: 5px;
+
+  button {
+    border: none;
+    background-color: transparent;
+
+    .bin-icon {
+      font-size: 20px;
+      color: $font-color;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "./assets/css/variables.scss";
+@import "./assets/css/mixins.scss";
+
+.App {
+  h1 {
+    text-align: center;
+    color: $font-color;
+  }
+
+  form {
+    text-align: center;
+    padding: 20px 0;
+
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+main {
+  @include flex(row, center, center);
+}
