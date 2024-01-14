@@ -1,0 +1,10 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.TodoList {
+  @include mixins.flex(column, center, center, 20px);
+  padding: 10px 5px;
+  border: 5px solid variables.$main-color;
+  border-radius: 20px;
+  width: 50%;
+}
