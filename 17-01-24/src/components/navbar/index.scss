@@ -1,0 +1,16 @@
+@use "../../assets/css/mixins";
+
+.Navbar {
+  @include mixins.flex(row, center, center);
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.36);
+
+  &__btns {
+    @include mixins.flex(row, center, center, 20px);
+
+    &__btn {
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
+}

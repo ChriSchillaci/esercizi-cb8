@@ -1,0 +1,40 @@
+@use "../../assets/css/mixins";
+
+.Home {
+  .categories {
+    @include mixins.flex(row, flex-start, center, 20px);
+    margin-top: 20px;
+    padding-left: 20px;
+
+    &__text {
+      margin: 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .Products {
+    @include mixins.flex(row, center, center, 30px);
+    margin-top: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+
+    &__product {
+      @include mixins.flex(column, center, center, 10px);
+      padding: 10px 40px 20px 40px;
+      background-color: rgb(27, 24, 24);
+      border-radius: 10px;
+      width: 400px;
+      height: 400px;
+
+      &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+}
