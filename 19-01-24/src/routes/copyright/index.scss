@@ -1,0 +1,29 @@
+.Copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90dvh;
+  width: 100%;
+
+  &-title {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  &-text {
+    padding-left: 60px;
+    padding-right: 40px;
+    width: 50%;
+  }
+
+  &-img {
+    width: 50%;
+  }
+
+  &-btn {
+    padding: 8px 15px;
+    background-color: rgb(66, 66, 254);
+    color: white;
+    border-radius: 15px;
+  }
+}
