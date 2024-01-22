@@ -1,0 +1,42 @@
+@use "./assets/css/variables";
+@use "./assets/css/mixins";
+
+.TodoApp {
+  @include mixins.flex(column, center, center);
+  padding: 0 80px;
+  .title {
+    text-align: center;
+  }
+
+  form {
+    @include mixins.flex(row, center, center, 10px);
+    height: 40px;
+    width: 100%;
+
+    .add-task {
+      height: 100%;
+      width: 80%;
+      padding-left: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: variables.$input-bg-color;
+      color: variables.$font-color;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .add-btn {
+      background-color: variables.$main-color;
+      color: white;
+      height: 100%;
+      width: 20%;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  }
+  main {
+    width: 100%;
+  }
+}
