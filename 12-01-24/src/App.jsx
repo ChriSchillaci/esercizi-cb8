@@ -1,6 +1,6 @@
 import { useState, useEffect, createContext } from "react";
-import "./App.scss";
 import TodoList from "./components/todoList";
+import styles from "./index.module.scss";
 
 export const setTodoDataContext = createContext(null);
 
@@ -32,15 +32,19 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>TodoList App</h1>
+    <div className={styles.TodoApp}>
+      <h1 className={styles.title}>TodoList App</h1>
       <form type="submit" onSubmit={addItem}>
         <input
+          className={styles["add-task"]}
           type="text"
           value={inputValue}
           onChange={onChangeInput}
           placeholder="Add a task..."
         />
+        <button className={styles["add-btn"]} type="button" onClick={addItem}>
+          Add
+        </button>
       </form>
       <main>
         <setTodoDataContext.Provider value={setTodoData}>

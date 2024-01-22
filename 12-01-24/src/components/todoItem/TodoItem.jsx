@@ -23,8 +23,7 @@ const TodoItem = ({ todos }) => {
     };
   }, [isTaskDel]);
 
-  const taskStatus = (e) => {
-    // e.target.checked ? setIsCompleted(true) : setIsCompleted(false);
+  const taskStatus = () => {
     setIsCompleted((prev) => !prev);
   };
 
@@ -40,14 +39,22 @@ const TodoItem = ({ todos }) => {
         isTaskDel ? styles["task-deleted"] : ""
       }`}
     >
-      <p className={isCompleted ? styles["task-completed"] : ""}>{todo}</p>
-      <div className={styles.TodoItem__btns}>
+      <p>
+        <span
+          className={`${styles.task} ${
+            isCompleted ? styles["task-completed"] : ""
+          }`}
+        >
+          {todo}
+        </span>
+      </p>
+      <div className={styles.btns}>
         <button
           className={styles.btn}
           type="button"
           onClick={() => onDeleteTask(id)}
         >
-          <RiDeleteBin6Line className={styles["btn__bin-icon"]} />
+          <RiDeleteBin6Line className={styles["bin-icon"]} />
         </button>
         <input
           className={styles.checkbox}
