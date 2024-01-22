@@ -7,6 +7,7 @@ export const setTodoDataContext = createContext(null);
 function App() {
   const [todoData, setTodoData] = useState([]);
   const [inputValue, setInputValue] = useState("");
+  const [displayError, setDisplayError] = useState("");
 
   useEffect(() => {
     fetch("https://dummyjson.com/todos?limit=4")
@@ -27,6 +28,12 @@ function App() {
   const addItem = (e) => {
     e.preventDefault();
 
+    if (!inputValue) {
+      setDisplayError("Task invalid");
+      setTimeout(() => setDisplayError(""), 5000);
+      return;
+    }
+
     setTodoData((prev) => [...prev, newItem]);
     setInputValue("");
   };
@@ -46,6 +53,7 @@ function App() {
           Add
         </button>
       </form>
+      <p className={styles.error}>{displayError}</p>
       <main>
         <setTodoDataContext.Provider value={setTodoData}>
           {todoData.length ? <TodoList todoData={todoData} /> : ""}
