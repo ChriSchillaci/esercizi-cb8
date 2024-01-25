@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 0.8rem;
+  /* background-image: url('https://th.bing.com/th/id/OIP.RzRPMdBDQR77e5w2IM8LiwHaHa?pid=ImgDet&w=167&h=167&c=7');
+  background-size: 100px; */
+  height: 100vh;
+}
+
+h1, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

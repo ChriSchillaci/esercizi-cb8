@@ -1,0 +1,20 @@
+.Detail {
+  .title {
+    text-align: center;
+  }
+
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+    .instruction {
+      padding-left: 50px;
+      list-style: none;
+      background-image: url("https://th.bing.com/th/id/OIP.rnEfFmAGcqsJO4MK6IvZKAHaHa?pid=ImgDet&w=182&h=182&c=7");
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 40px;
+    }
+  }
+}
