@@ -1,0 +1,12 @@
+.Layout {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(94, 88, 88);
+  .link {
+    color: white;
+    font-weight: bold;
+  }
+}

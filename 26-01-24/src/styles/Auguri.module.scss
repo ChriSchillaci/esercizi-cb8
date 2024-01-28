@@ -1,0 +1,17 @@
+.Auguri {
+  position: relative;
+  height: 90vh;
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: #222523;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+  }
+}
