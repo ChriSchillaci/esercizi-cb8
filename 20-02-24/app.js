@@ -6,14 +6,14 @@ const PORT = 3001;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.sendFile(__dirname + "/public/html/index.html");
 });
 
 app.get("/products", (req, res) => {
   const { search, category } = req.query;
 
-  let filterProduct = [...products];
+  let filterProduct = products;
 
   if (search)
     filterProduct = filterProduct.filter((product) =>
