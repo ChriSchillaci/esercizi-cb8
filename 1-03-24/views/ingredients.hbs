@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{#each filterRecipe}}
+      {{this.name}}
+      {{/each}}
+    </title>
+    <link rel="stylesheet" href="/css/recipe.css">
+  </head>
+  <body>
+    {{#each filterRecipe}}
+      <div class="ingredients">Ingredients:
+        {{#each this.ingredients}}
+          <p>{{this}}{{#unless @last}},{{/unless}}{{#if @last}}.{{/if}}</p>
+        {{/each}}
+      </div>
+    {{/each}}
+  </body>
+</html>
