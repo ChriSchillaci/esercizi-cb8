@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Satin Ball Gown",
+    "gender": "woman",
+    "price": 150
+  },
+  {
+    "id": 2,
+    "name": "Slim-fit Suit",
+    "gender": "man",
+    "price": 200
+  },
+  {
+    "id": 3,
+    "name": "Flowy Maxi Dress",
+    "gender": "woman",
+    "price": 80
+  },
+  {
+    "id": 4,
+    "name": "Cargo Shorts",
+    "gender": "man",
+    "price": 30
+  },
+  {
+    "id": 5,
+    "name": "Floral Sundress",
+    "gender": "woman",
+    "price": 50
+  },
+  {
+    "id": 6,
+    "name": "Tailored Tuxedo",
+    "gender": "man",
+    "price": 300
+  },
+  {
+    "id": 7,
+    "name": "Denim Jacket",
+    "gender": "man",
+    "price": 70
+  },
+  {
+    "id": 8,
+    "name": "Striped Shirt Dress",
+    "gender": "woman",
+    "price": 45
+  },
+  {
+    "id": 9,
+    "name": "Plaid Shirt",
+    "gender": "man",
+    "price": 25
+  },
+  {
+    "id": 10,
+    "name": "Athletic Shorts",
+    "gender": "child",
+    "price": 20
+  },
+  {
+    "id": 11,
+    "name": "Casual Jumpsuit",
+    "gender": "woman",
+    "price": 60
+  },
+  {
+    "id": 12,
+    "name": "Cotton Polo Shirt",
+    "gender": "man",
+    "price": 35
+  },
+  {
+    "id": 13,
+    "name": "Printed Romper",
+    "gender": "woman",
+    "price": 55
+  },
+  {
+    "id": 14,
+    "name": "Cargo Pants",
+    "gender": "man",
+    "price": 40
+  },
+  {
+    "id": 15,
+    "name": "Lace Cocktail Dress",
+    "gender": "woman",
+    "price": 120
+  },
+  {
+    "id": 16,
+    "name": "Chino Pants",
+    "gender": "man",
+    "price": 50
+  },
+  {
+    "id": 17,
+    "name": "Denim Mini Skirt",
+    "gender": "woman",
+    "price": 35
+  },
+  {
+    "id": 18,
+    "name": "Hooded Sweatshirt",
+    "gender": "man",
+    "price": 45
+  },
+  {
+    "id": 19,
+    "name": "Embroidered Blouse",
+    "gender": "woman",
+    "price": 65
+  },
+  {
+    "id": 20,
+    "name": "Cargo Joggers",
+    "gender": "man",
+    "price": 55
+  },
+  {
+    "id": 21,
+    "name": "Ruffled Shift Dress",
+    "gender": "woman",
+    "price": 75
+  },
+  {
+    "id": 22,
+    "name": "Graphic T-shirt",
+    "gender": "man",
+    "price": 20
+  },
+  {
+    "id": 23,
+    "name": "Off-shoulder Top",
+    "gender": "woman",
+    "price": 40
+  },
+  {
+    "id": 24,
+    "name": "Corduroy Pants",
+    "gender": "man",
+    "price": 60
+  },
+  {
+    "id": 25,
+    "name": "Ditsy Floral Dress",
+    "gender": "woman",
+    "price": 55
+  },
+  {
+    "id": 26,
+    "name": "V-neck Sweater",
+    "gender": "man",
+    "price": 30
+  },
+  {
+    "id": 27,
+    "name": "Tie-front Blouse",
+    "gender": "woman",
+    "price": 50
+  },
+  {
+    "id": 28,
+    "name": "Chambray Shirt",
+    "gender": "man",
+    "price": 35
+  },
+  {
+    "id": 29,
+    "name": "Pleated Midi Skirt",
+    "gender": "woman",
+    "price": 60
+  },
+  {
+    "id": 30,
+    "name": "Performance Shorts",
+    "gender": "child",
+    "price": 25
+  }
+]

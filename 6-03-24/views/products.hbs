@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/products.css">
+  </head>
+  <body>
+    <a href="/">Click here to see the home page</a>
+    <div class="btns">
+      <button class="btn"><a class="btn__link" href="/products">All</a></button>
+      <button class="btn"><a class="btn__link" href="/products?category=man">Man</a></button>
+      <button class="btn"><a class="btn__link" href="/products?category=woman">Woman</a></button>
+      <button class="btn"><a class="btn__link" href="/products?category=child">Child</a></button>
+    </div>
+    <div class="products">
+      {{#each filterProducts}}
+        <div class="product">
+            <img src="https://picsum.photos/id/{{this.id}}/200/200" alt="img" >
+          <p>Product: {{this.name}}</p>
+          <p>Price: ${{this.price}}</p>
+        </div>
+      {{/each}}
+      <p class="error-text">
+        {{error}}
+      </p>
+    </div>
+  </body>
+</html>
