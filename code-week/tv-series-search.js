@@ -1,10 +1,14 @@
 import { popularTvSeriesGen, filteredTvSeries } from "./modules/components.js";
+import { closeModal, openModal } from "./utils/modal.js";
 
 const searchQuery = new URLSearchParams(location.search);
 const getFilter = searchQuery.get("filter");
 
 const mainEl = document.querySelector("main");
 const inputEl = document.querySelector("input");
+
+const searchBtn = document.querySelectorAll(".icon")[3];
+const modalInput = document.querySelector(".modal-input");
 
 popularTvSeriesGen(
   `/search/tv?query=${getFilter}&api_key=API_KEY`,
@@ -26,4 +30,8 @@ popularTvSeriesGen(
   });
 });
 
+searchBtn.addEventListener("click", openModal);
+document.body.addEventListener("click", closeModal);
+
 inputEl.addEventListener("keyup", filteredTvSeries);
+modalInput.addEventListener("keyup", filteredTvSeries);

@@ -108,6 +108,53 @@
     display: none;
   }
 
+  .bg-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 3;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(14 23 30);
+    border-radius: 10px;
+    height: 130px;
+    width: 60%;
+    z-index: 4;
+  }
+  
+  .modal-input:focus {
+    outline: none;
+  }
+  
+  .modal-btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(67 82 101);
+    color: white;
+    border: none;
+  }
+  
+  .active-bg {
+    display: block;
+  }
+  
+  .active-modal {
+    display: flex;
+  }
+
   @media screen and (max-width: 768px) { 
     nav {
         display: none;

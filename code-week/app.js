@@ -5,6 +5,8 @@ import {
   filteredTvSeries,
 } from "./modules/components.js";
 
+import { closeModal, openModal } from "./utils/modal.js";
+
 getApi("/tv/popular").then((data) =>
   data.results.map((el) => slider.appendChild(tvCardGen(el, "1280")))
 );
@@ -26,6 +28,10 @@ const mainEl = document.querySelector("main");
 const btnLeft = document.querySelector(".btn-left");
 const btnRight = document.querySelector(".btn-right");
 
+const searchBtn = document.querySelectorAll(".icon")[3];
+
+const modalInput = document.querySelector(".modal-input");
+
 setInterval(() => {
   slider.scrollBy({ left: 1000, behavior: "smooth" });
 }, 5000);
@@ -38,4 +44,8 @@ btnRight.addEventListener("click", () => {
   slider.scrollBy({ left: 1000, behavior: "smooth" });
 });
 
+searchBtn.addEventListener("click", openModal);
+document.body.addEventListener("click", closeModal);
+
 inputEl.addEventListener("keyup", filteredTvSeries);
+modalInput.addEventListener("keyup", filteredTvSeries);
